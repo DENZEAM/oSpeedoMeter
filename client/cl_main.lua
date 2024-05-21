@@ -12,7 +12,7 @@ function getVehicleLightsState()
 
   if vehicle ~= 0 then
     local lightsOn, highbeamsOn = GetVehicleLightsState(vehicle)
-    print("Lights on: ", lightsOn, " Highbeams on: ", highbeamsOn)
+    
 
     if lightsOn and highbeamsOn == 0 then
       return "off" -- Feux de croisement allumés
@@ -83,19 +83,17 @@ Citizen.CreateThread(function()
       local lightsState = getVehicleLightsState()
       
       
-      print(lightsState)
-      print(EnginePourcent)
-      print(FuelPourcent)
+     
       SendReactMessage("SetFuel", {fuel = FuelPourcent})
       SendReactMessage("SetEngin", {engin = EnginePourcent})
       SendReactMessage("SetLight", {light = lightsState})
       
       
-      print("Player is in a vehicle")
+      
       SendReactMessage("SET_SHOW_ATH",  {show = true})
       SendReactMessage("SetSpeedo", {speed = speedKmHInt, pourcent = speedPercentageInt})
     else
-      print("Player is not in a vehicle")
+      
       SendReactMessage("SET_SHOW_ATH",  {show = false})
     end
     Citizen.Wait(TickRate) 

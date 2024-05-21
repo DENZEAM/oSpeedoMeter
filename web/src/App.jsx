@@ -8,7 +8,6 @@ function App() {
 
   useNuiEvent("SET_SHOW_ATH", (data) => {
     setHiddenATH(data.show);
-    console.log("ATH visibility set to: ", data.show);
   });
 
   return (
