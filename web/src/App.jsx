@@ -1,24 +1,24 @@
 import "./App.css";
+import useNuiEvent from "./hooks/useNuiEvent.jsx";
 import ATH from "./views/ATH/Layout.jsx";
 import { useState } from "react";
 
 function App() {
   const [hiddenATH, setHiddenATH] = useState(true);
 
-  window.addEventListener("message", (event) => {
-    const eventData = event.data;
-
-    if (eventData.type === "SET_SHOW_ATH") {
-      setHiddenATH(eventData.show);
-    }
+  useNuiEvent("SET_SHOW_ATH", (data) => {
+    setHiddenATH(data.show);
+    console.log("ATH visibility set to: ", data.show);
   });
 
   return (
     <div
-    // style={{
-    //   backgroundImage:
-    //     "url('https://cdn.discordapp.com/attachments/1156492030596358185/1230139530175320145/image.png?ex=66323bb6&is=661fc6b6&hm=f6c9a9189fad4e62470414bbc98ae803bb99995c73729c36379496169eea1223&')",
-    // }}
+      style={{
+        backgroundImage:
+          "url('https://media.discordapp.net/attachments/1156492030596358185/1230151777400393858/image.png?ex=6639875e&is=663835de&hm=58cc79d24e08df3d87153f4ce940a64e4a67014cb081300b793f67c566a22a0b&=&format=webp&quality=lossless&width=1258&height=708')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       <div style={{ opacity: `${hiddenATH ? "1" : "0"}` }}>
         <ATH></ATH>

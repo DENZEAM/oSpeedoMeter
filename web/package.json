@@ -1,5 +1,5 @@
 {
-  "name": "oHud",
+  "name": "oSpeedo",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "react": "^18.2.0",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
+    "react-gauge-component": "^1.2.2",
+    "react-native-speedometer-chart": "^0.7.5",
     "sass": "^1.75.0"
   },
   "devDependencies": {
