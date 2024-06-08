@@ -1,7 +1,7 @@
 fx_version "cerulean"
 
-description "Basic React (TypeScript) & Lua Game Scripts Boilerplate"
-author "Project Error"
+description "OneDev - SpeedoMeter"
+author "OneDev"
 version '1.0.0'
 
 lua54 'yes'
