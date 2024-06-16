@@ -14,14 +14,13 @@ games {
 ui_page 'web/build/index.html'
 
 client_script {
-	'@es_extended/locale.lua',
+
 	"client/**/*",
 	'locales/*.lua',
 }
 
 server_scripts {
-	'@es_extended/locale.lua',
-	'@oxmysql/lib/MySQL.lua',
+
 	"server/**/*",
 	'locales/*.lua',
 }
@@ -30,7 +29,7 @@ shared_script {
 	'shared/*.lua',
 }
 
-shared_script '@es_extended/imports.lua'
+
 
 files {
 	'web/build/index.html',
