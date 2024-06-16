@@ -1,7 +1,17 @@
 # OneDev - SpeedoMeter
 
+## Preview: [YouTube Preview](https://youtu.be/zV1ygbp-_dE)
+
+## Download
+
+[Download](https://github.com/DENZEAM/oSpeedoMeter/releases)
+
+## Discord
+
+[Join our Discord](https://discord.com/invite/onedev)
+
 ## Introduction
-OneDev - SpeedoMeter is a speedometer script for GTA V and Red Dead Redemption 2, providing an enhanced user interface for vehicle speed monitoring.
+OneDev - SpeedoMeter is a speedometer script for FiveM
 
 ## Table of Contents
 - [Introduction](#introduction)
