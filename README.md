@@ -37,7 +37,7 @@ Start the resource on your server. The speedometer will be available to all play
 
 ## Configuration
 The configuration file `shared/config.lua` allows you to adjust the following settings:
-- `MaxSpeed`: Maximum speed value displayed.
+- `MaxSpeed`: The required speed for the speedometer gauge to be 100% filled.
 - `TickRate`: Update frequency for the speedometer.
 - `TickRateInVehicle`: Update frequency when in a vehicle.
 
